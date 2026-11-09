@@ -1,0 +1,27 @@
+package("houshi", "0.1.0", :public)
+needs("jisho", "^0.1.0")
+needs("kazu", "^0.1.0")
+needs("kueri", "^0.1.0")
+needs("kyohi", "^0.1.0")
+needs("maakuappu", "^0.1.0")
+needs("moji", "^0.1.0")
+needs("retsu", "^0.1.0")
+needs("settei", "^0.1.0")
+needs("shisutemu", "^0.1.0")
+needs("tesuto", "^0.1.0")
+legacy_packages(
+  "0.1.0",
+  [
+    ["chozou", "houshi/chozou"],
+    ["kiibariu", "houshi/chozou/kiibariu"],
+    ["sutoriimu", "houshi/chozou/sutoriimu"],
+    ["teeburu", "houshi/chozou/teeburu"],
+    ["saishikou", "houshi/saishikou"],
+    ["kurasuta", "houshi/kurasuta"],
+    ["mitoshi", "houshi/mitoshi"],
+    ["keisoku", "houshi/mitoshi/keisoku"],
+    ["rogu", "houshi/mitoshi/rogu"],
+    ["tsuiseki", "houshi/mitoshi/tsuiseki"],
+    ["shinchoku", "houshi/shinchoku"]
+  ]
+)

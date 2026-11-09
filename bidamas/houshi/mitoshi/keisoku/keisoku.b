@@ -9,9 +9,9 @@ answers the samples, and `exposition` writes them as /metrics serves them.
     sample_line({name: "hits_total", labels: {"path" => "/a"}, value: 2}) #=> "hits_total{path=\"/a\"} 2"
 """
 
+use("houshi/mitoshi/rogu")
 use("jisho")
 use("kyohi", [:raised])
-use("mitoshi/rogu")
 use("moji", %i[checked lines])
 use("retsu", %i[count_where enumerate first is_empty rest zip])
 
@@ -362,7 +362,7 @@ endpoint: a /metrics handler over instruments, or nil when observe turns metrics
     endpoint({metrics: :off}, []) #=> nil
 """
 def endpoint(observe, instruments)
-  if mitoshi::rogu::on?(observe, :metrics)
+  if houshi::mitoshi::rogu::on?(observe, :metrics)
     fn(_req)
       {
         status: 200,
