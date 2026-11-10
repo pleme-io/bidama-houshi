@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "bluefile_b3": "b3:221131be1a6f46ad22e928ee85b37ff42d365d25c90caa05588f8cf72c0b4d16",
+  "bluefile_b3": "b3:1135138fc9bd9581d3c192b89f5ad50794e6bb0e8cccd39dfae8df8a3ac807e3",
   "manifest": {
     "schema": 1,
     "name": "bidama-houshi",
@@ -14,7 +14,11 @@
     "runs": {},
     "tools": [],
     "checks": {},
-    "apps": {},
+    "apps": {
+      "shinchoku": {
+        "file": "apps/shinchoku.b"
+      }
+    },
     "catalog": null
   },
   "sources": {}

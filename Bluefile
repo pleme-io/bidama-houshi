@@ -1,3 +1,5 @@
 package("bidama-houshi", "0.1.0")
 
 packages("bidamas")
+
+app("shinchoku", "apps/shinchoku.b")
