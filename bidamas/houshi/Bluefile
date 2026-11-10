@@ -1,4 +1,4 @@
-package("houshi", "0.1.0", :public)
+package("houshi", "0.1.1", :public)
 needs("jisho", "^0.1.0")
 needs("kazu", "^0.1.0")
 needs("kueri", "^0.1.0")

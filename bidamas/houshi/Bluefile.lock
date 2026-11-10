@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "bluefile_b3": "b3:49caa315aef97951b12e9e9527f07ecc3d4de5deeaf22a3f397b4619a51976c5",
+  "bluefile_b3": "b3:e8c306eb69bb475ac2a483463aa7b3c8226fdf836412dd360b94d727ac522ea4",
   "manifest": {
     "schema": 1,
     "name": "houshi",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "needs": {
       "jisho": "^0.1.0",
       "kazu": "^0.1.0",
