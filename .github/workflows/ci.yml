@@ -13,9 +13,14 @@ permissions:
   contents: read
 
 jobs:
+  resolve:
+    uses: pleme-io/substrate/.github/workflows/runner-resolve.yml@main
+
   checks:
+    needs: resolve
     uses: pleme-io/substrate/.github/workflows/nix-fleet.yml@main
     with:
+      runner-labels: ${{ format('["{0}"]', needs.resolve.outputs.runner) }}
       lint: false
       canonical-check: ""
       eval-checks: '["project", "kurasuta-kinds-fresh"]'
