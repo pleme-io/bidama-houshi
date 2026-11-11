@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "bluefile_b3": "b3:1135138fc9bd9581d3c192b89f5ad50794e6bb0e8cccd39dfae8df8a3ac807e3",
+  "bluefile_b3": "b3:669284452f4cf2f48a7c91380a42242b6b8764c14d9056ded076c2bd72d3b249",
   "manifest": {
     "schema": 1,
     "name": "bidama-houshi",
@@ -12,8 +12,24 @@
       "bidamas"
     ],
     "runs": {},
-    "tools": [],
-    "checks": {},
+    "tools": [
+      "daemonize",
+      "nats-server",
+      "postgresql",
+      "valkey"
+    ],
+    "checks": {
+      "chozou-peers": {
+        "file": "checks/peers.b"
+      },
+      "heni-mutations": {
+        "file": "checks/heni.b",
+        "inputs": [
+          "heni",
+          "bidamas"
+        ]
+      }
+    },
     "apps": {
       "shinchoku": {
         "file": "apps/shinchoku.b"

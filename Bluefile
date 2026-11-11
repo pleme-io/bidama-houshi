@@ -2,4 +2,12 @@ package("bidama-houshi", "0.1.0")
 
 packages("bidamas")
 
+tool("daemonize")
+tool("nats-server")
+tool("postgresql")
+tool("valkey")
+
+check("chozou-peers", "checks/peers.b")
+check("heni-mutations", "checks/heni.b", ["heni", "bidamas"])
+
 app("shinchoku", "apps/shinchoku.b")
